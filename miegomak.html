@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <style>
+  /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+<div class="container text-center" style="padding:0;width:100%">
+	<div class="col-md-12" style="padding:0;width:100%">
+
+	
+	<div id="myCarousel" class="carousel slide" dataride="carousel" style="padding:0;width:100%">
+		<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slideto="1"></li>
+				<li data-target="#myCarousel" data-slideto="2"></li>	
+				<li data-target="#myCarousel" data-slideto="3"></li>
+				<li data-target="#myCarousel" data-slideto="4"></li>
+				<li data-target="#myCarousel" data-slideto="5"></li>				
+			</ol>
+		<!-- deklarasi carousel -->
+	<div class="carousel-inner" role="listbox" style="padding:0">
+		<div class="item active" style="padding:0">
+			<img src="image/dt/1.jpg" alt="www.del.ac.id"style="height: 400px; width: 100%;">      
+			<div class="carousel-caption">	
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+			
+		
+		<div class="item" style="padding:0">
+			<img src="image/dt/2.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">	
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		
+		<div class="item" style="padding:0">
+			<img src="image/dt/3.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		<div class="item" style="padding:0">
+			<img src="image/dt/4.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		<div class="item" style="padding:0">
+			<img src="image/dt/5.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		<div class="item" style="padding:0">
+			<img src="image/dt/6.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+	</div>
+		
+	<!-- membuat panah next dan previous -->
+		<a class="left carousel-control" href="#myCarousel"
+		role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"
+		aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel"
+		role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"
+		aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+		</a>
+		</div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">A4.com</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="7.html">tempat wisata</a></li>
+        <li><a href="6.html">Contact</a></li>
+		<li><a href="6.html">galery</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+  
+    <div class="col-sm-3 sidenav" style="height:1030px">
+	<ul class="list-group" style="margin-top:50px">
+  <li class="list-group-item"><a href="makanankhas.html">Masakan Tradisional</a></li>
+  <li class="list-group-item"><a href="penginapan.html">Penginapan</a></li>
+  <li class="list-group-item"><a href="Pemandianumum.html">Pemandian umum</a></li>
+</ul>
+      <h1 style="margin-top:100px">find us</h1>
+
+<div id="map" style="width:100%;height:200px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(2.385602, 99.148211),
+    zoom: 5
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+		</div>
+
+    <div class="col-sm-9 text-left"> 
+      
+   
+	<div class="container" style="width:100%">    
+	<div class="row">
+    <h2 class="page-header">Natinombur</h2>
+    <div class="col-md-6">
+      <div class="thumbnail" style="border:0">
+          <img src="image/mk/6.jpg" class="img-rounded" alt="Mie gomak" style="width:100%;height:400px">
+        </a>
+		<div class="caption">
+			<center>
+			Mie gomak
+			</center>
+          </div>
+      </div>  
+    </div>
+    <div class="col-md-6">
+    <p>Bahan-bahan/bumbu-bumbu :<br>
+	<ol>
+	<li>1/2 kg mie lidi</li>
+	<li>Santan (bisa menggunakan 1buah santan kara)</li>
+	<li>1 buah telur (optional)</li>
+	<li>Daun bawang</li>
+	<li>Garam</li>
+	</ol>
+	<p>Bahan untuk ditumis :<br>
+	<ol>
+	<li>2 buah sayur labu diiris sesuai selera. Kalau aku diiris tipis memanjang. (Kalau tidak ada bisa diganti dengan 1 ikat sayur sawi atau kol)</li>
+	<li>3 siung bawang merah</li>
+	<li>1 siung bawang putih</li>
+	</ol>
+	<p>Bahan yang dihaluskan :<br>
+	<ol>
+	<li>15 buah cabe merah/rawit (sesuai selera suka pedas atau tidak)</li>
+	<li>5 siung bawang merah</li>
+	<li>1 siung bawang putih</li>
+	<li>1 ruas ibu jari kunyit</li>
+	<li>1 ruas ibu jari jahe</li>
+    </ol>
+	</div>
+    
+    </div>
+    </div>
+	<div class="container" style="width:100%">    
+	<div class="row">
+    <div class="col-md-6">
+     <p>Cara Pengolahan :<br>
+	<ol>
+	<li>Air kurang lebih 1 liter direbus sampe mendidih. Setelah mendidih, masukkan mie lidi. Sesekali aduk sampe mie nya matang. Tapi jangan terlalu matamg karna nanti akan ditumis, takutnya mie nya terlalu lembek. Setelah mie nya matang, angkat dan tiriskan mie. Cuci mie dengan air bersih. Air hasil rebusan jangan dibuang. </li>
+	<li>Tumis bawang putih dan bawang merah sampe harum, kemudian masukkan sayur sampe layu dan matang, masukkan juga 1/2sdm garam. Masukkan mie dan aduk sampe semua tercampur rata. Setelah masak, sisihkan ke dalam wadah untuk mie.</li>
+	</ol>
+	<p>Untuk kuah : <br>
+	<ul>
+	<li>Tumis bahan yang dihaluskan dengan minyak secukupnya. Aduk sampe matang, kemudian masukkan air hasil rebusan mie dan 1 gelas air. Aduk2 sampe mendidih, kemudian masukkan santan, daun bawang yang telah diiris2 dan telur. Masukkan juga garam secukupnya. Aduk2 supaya santan tidak pecah. Koreksi rasa. Setelah mendidih, masukkan ke wadah.</li?
+	</ul>
+	<p>Selamat Mencoba
+    </div>
+    
+    </div>
+    </div>
+	</div>
+	</div>
+	</div>
+
+
+<footer class="container-fluid text-center">
+<div class="footer-block1" style="padding:0;border:0"><div id="text-4" class="widget_text widget" style="padding:0;border:0"><h3 class="widget-title"><center><ul class="list-inline">
+                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                </li>
+            </ul></center>
+			
+</div></div>
+
+<div class="foot-wrap container" style="padding:0;border:0">
+<div id="online" style="padding:0;border:0"></div>
+<p class="copyright">&copy;&nbsp; 2016 <a target="_blank" href="#">A4.com Lake Toba</a></p>
+</div>
+</footer>
+
+</body>
+</html>

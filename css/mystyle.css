@@ -1,0 +1,37 @@
+.body{
+	background: url(logo.jpg);
+	background-size: 100%;
+}
+
+.head{
+	text-align: center;
+}
+
+.new{
+	margin: 0 19em 0 19em;
+	background: #F5F5F5;
+}
+
+.inputname{
+	width: 25em;
+	height: 2em;
+}
+
+.input{
+	width: 50em;
+	height: 2em;
+}
+
+.birth{
+	height: 2em;
+}
+
+.sign{
+	padding: 1em 20em;
+	font-size: 1em;
+	margin-top: 2em;
+	background-color:#319cd5;
+	color:white;
+	border:none;
+	border-radius: 0.3em;
+}

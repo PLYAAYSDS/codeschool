@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <style>
+  /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+<div class="container text-center" style="padding:0;width:100%">
+	<div class="col-md-12" style="padding:0;width:100%">
+
+	
+	<div id="myCarousel" class="carousel slide" dataride="carousel" style="padding:0;width:100%">
+		<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slideto="1"></li>
+				<li data-target="#myCarousel" data-slideto="2"></li>	
+				<li data-target="#myCarousel" data-slideto="3"></li>
+				<li data-target="#myCarousel" data-slideto="4"></li>
+				<li data-target="#myCarousel" data-slideto="5"></li>				
+			</ol>
+		<!-- deklarasi carousel -->
+	<div class="carousel-inner" role="listbox" style="padding:0">
+		<div class="item active" style="padding:0">
+			<img src="image/dt/1.jpg" alt="www.del.ac.id"style="height: 400px; width: 100%;">      
+			<div class="carousel-caption">	
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+			
+		
+		<div class="item" style="padding:0">
+			<img src="image/dt/2.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">	
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		
+		<div class="item" style="padding:0">
+			<img src="image/dt/3.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		<div class="item" style="padding:0">
+			<img src="image/dt/4.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		<div class="item" style="padding:0">
+			<img src="image/dt/5.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+		<div class="item" style="padding:0">
+			<img src="image/dt/6.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h1>A4.com</h1>      
+				<p>Beautiful Lake Toba</p>
+			</div>
+		</div>
+	</div>
+		
+	<!-- membuat panah next dan previous -->
+		<a class="left carousel-control" href="#myCarousel"
+		role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"
+		aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel"
+		role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"
+		aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+		</a>
+		</div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="background-color:#000000">A4.com</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="background-color:#000000">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index2.html">Home</a></li>
+        <li><a href="7.html">tempat wisata</a></li>
+        <li><a href="6.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+  
+    <div class="col-sm-3 sidenav" style="height:1030px">
+	<ul class="list-group" style="margin-top:50px">
+  <li class="list-group-item"><a href="makanankhas.html">Masakan Tradisional</a></li>
+  <li class="list-group-item"><a href="penginapan.html">Penginapan</a></li>
+  <li class="list-group-item"><a href="Pemandianumum.html">Pemandian umum</a></li>
+</ul>
+      <h1 style="margin-top:100px">find us</h1>
+
+<div id="map" style="width:100%;height:200px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(2.385602, 99.148211),
+    zoom: 5
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+		</div>
+
+    <div class="col-sm-9 text-left"> 
+      
+   <font" face="calibri" color="black"><center><h1 class="page-header">DANAU TOBA</h1></center>
+	<div class="col-md-12" style="padding:0;border:0">
+		<div id="myCarousel" class="carousel slide" dataride="carousel" style="padding:0">
+		<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slideto="1"></li>
+				<li data-target="#myCarousel" data-slideto="2"></li>				
+			</ol>
+		<!-- deklarasi carousel -->
+	<div class="carousel-inner" role="listbox" style="padding:0">
+		<div class="item active" style="padding:0">
+			<img src="image/1.jpg" alt="www.del.ac.id"style="height: 400px; width: 1900px;">      
+			<div class="carousel-caption">	
+				<h4>Tempat Pengasingan</h4>
+				<font face="calibri">
+				<p>Tempat ini merupakan tempat bersejarah karena disini merupakan rumah yang cukup indah dan mempunyai 
+					history sendiri karena rumah ini sempat di tempatti oleh presiden pertama kita presiden soekarno, di 
+					tempat ini anda bisa melihat pemandangan danau toba dari sisi lain cukup indah karena danaunya langsung 
+					lepas luas dari atas bangunan ini.</p>
+				</font>
+			</div>
+		</div>
+			
+		
+		<div class="item" style="padding:0">
+			<img src="image/2.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">	
+				<h4>Pusuk Buhit</h4>
+				<font face="calibri">
+				<p>Pusuk Buhit merupakan deretan bukit yang ada di Pulau Samosir. Di tempat ini kamu bisa melihat panorama alam 
+				serta air terjun yang cukup indah. Untuk menuju tempat ini kamu bisa menggunakan bus yang disediakan olah pengelola 
+				tempat wisata. Tetapi untuk mencapai puncak bukit, kamu harus berjalan kaki sekitar 500 meter.</p>
+				</font>
+			</div>
+		</div>
+		
+		<div class="item" style="padding:0">
+			<img src="image/3.jpg" alt="www.del.ac.id" style="height: 400px; width: 100%;">
+			<div class="carousel-caption">				
+				<h4>Parapat</h4>
+				<font face="calibri">
+				<p>Parapat merupakan obyek wisata di kawasan Danau Toba yang menyajikan keindahan pemandangan alamnya. 
+				Di sepanjang perjalanan dari Danau Toba, kamu bisa menikmati keindahan alam kota Parapat.</p>
+				<p>Selain itu kamu bisa menikmati kebersamaan dengan monyet-monyet yang dibiarkan bebas berkeliaran di 
+				tempat ini. Kamu bisa memberi makan atau sekedar berfoto dengan hewan lucu satu ini.</p>
+				</font>
+			</div>
+		</div>
+	</div>
+		
+	<!-- membuat panah next dan previous -->
+		<a class="left carousel-control" href="#myCarousel"
+		role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"
+		aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel"
+		role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"
+		aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+		</a>
+		</div>
+		</div>
+	
+    <div class="col-md-12" style="padding:0;border:0">
+			<div class="well" style="padding:0;border:0;background-color:white">
+				<p>Diperkirakan Danau Toba terbentuk saat ledakan sekitar 73.000-75.000 tahun yang lalu dan merupakan letusan supervolcano(gunung berapi super) 
+				yang paling baru. Bill Rose dan Craig Chesner dari Michigan Technological University memperkirakan bahwa jumlah total material pada letusan 
+				sekitar 2.800 km3 -sekitar 2.000 km3 dari Ignimbrit yang mengalir di atas tanah, dan sekitar 800 km3 yang jatuh sebagai abu terutama ke barat. 
+				Aliran piroklastik dari letusan menghancurkan area seluas 20.000 km2, dengan deposito abu setebal 600 m dengan kawah utama.</p>
+				<p>Kejadian ini menyebabkan kematian massal dan kepunahan pada beberapa spesies makhluk hidup. Menurut beberapa bukti DNA, letusan ini juga 
+				menyusutkan jumlah manusia sampai sekitar 60% dari jumlah populasi manusia bumi saat itu, yaitu sekitar 60 juta manusia. Letusan itu juga ikut 
+				menyebabkan terjadinya zaman es, walaupun para ahli masih memperdebatkannya. Setelah letusan tersebut, terbentuk kaldera yang kemudian terisi 
+				oleh air dan menjadi yang sekarang dikenal sebagai Danau Toba. Tekanan ke atas oleh magma yang belum keluar menyebabkan munculnya Pulau Samosir.</p>
+				<p>Tim peneliti multidisiplin internasional, yang dipimpin oleh Dr. Michael Petraglia, mengungkapkan dalam suatu konferensi pers di Oxford, 
+				Amerika Serikat bahwa telah ditemukan situs arkeologi baru yang cukup spektakuler oleh para ahli geologi di selatan dan utara India. Di situs 
+				itu terungkap bagaimana orang bertahan hidup, sebelum dan sesudah letusan gunung berapi (supervolcano) Toba pada 74.000 tahun yang lalu, dan bukti 
+				tentang adanya kehidupan di bawah timbunan abu Gunung Toba. Padahal sumber letusan berjarak 3.000 mil, dari sebaran abunya.</p>
+				<p>Selama tujuh tahun, para ahli dari universitas Oxford tersebut meneliti proyek ekosistem di India, untuk mencari bukti adanya kehidupan dan 
+				peralatan hidup yang mereka tinggalkan di padang yang gundul. Daerah dengan luas ribuan hektare ini ternyata hanya sabana (padang rumput). 
+				Sementara tulang belulang hewan berserakan. Tim menyimpulkan, daerah yang cukup luas ini ternyata ditutupi debu dari letusan gunung berapi purba.</p>
+				<p>Penyebaran debu gunung berapi itu sangat luas, ditemukan hampir di seluruh dunia. Berasal dari sebuah erupsi supervolcano purba, yaitu Gunung Toba. 
+				Dugaan mengarah ke Gunung Toba, karena ditemukan bukti bentuk molekul debu vulkanik yang sama di 2100 titik. Sejak kaldera kawah yang kini jadi danau 
+				Toba di Indonesia, hingga 3000 mil, dari sumber letusan. Bahkan yang cukup mengejutkan, ternyata penyebaran debu itu sampai terekam hingga Kutub Utara.
+				Hal ini mengingatkan para ahli, betapa dahsyatnya letusan super gunung berapi Toba kala itu.</p></font>
+			</div>
+		</div>
+    
+  </div>
+</div>
+    </div>
+
+
+<footer class="container-fluid text-center" style="background-color:#000000">
+<div class="footer-block1" style="padding:0;border:0"><div id="text-4" class="widget_text widget" style="padding:0;border:0"><h3 class="widget-title"><center><ul class="list-inline">
+                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                </li>
+            </ul></center>
+			
+</div></div>
+
+<div class="foot-wrap container" style="padding:0;border:0">
+<div id="online" style="padding:0;border:0"></div>
+<p class="copyright">&copy;&nbsp; 2016 <a target="_blank" href="#">A4.com Lake Toba</a></p>
+</div>
+</footer>
+
+</body>
+</html>
